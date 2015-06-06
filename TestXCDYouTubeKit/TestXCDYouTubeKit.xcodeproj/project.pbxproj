@@ -13,6 +13,8 @@
 		3BDDE9331B22E3A900E12766 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDE9321B22E3A900E12766 /* Images.xcassets */; };
 		3BDDE9361B22E3A900E12766 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDE9341B22E3A900E12766 /* LaunchScreen.xib */; };
 		3BDDE9421B22E3A900E12766 /* TestXCDYouTubeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDE9411B22E3A900E12766 /* TestXCDYouTubeKitTests.swift */; };
+		3BDDE94C1B22E3F300E12766 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3BDDE94B1B22E3F300E12766 /* Cartfile */; };
+		3BDDE9521B22E52200E12766 /* XCDYouTubeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDDE9511B22E52200E12766 /* XCDYouTubeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		3BDDE93B1B22E3A900E12766 /* TestXCDYouTubeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestXCDYouTubeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BDDE9401B22E3A900E12766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BDDE9411B22E3A900E12766 /* TestXCDYouTubeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXCDYouTubeKitTests.swift; sourceTree = "<group>"; };
+		3BDDE94B1B22E3F300E12766 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3BDDE9511B22E52200E12766 /* XCDYouTubeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCDYouTubeKit.framework; path = Carthage/Build/iOS/XCDYouTubeKit.framework; sourceTree = SOURCE_ROOT; };
+		3BDDE9541B22E75200E12766 /* TestXCDYouTubeKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestXCDYouTubeKit-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDDE9521B22E52200E12766 /* XCDYouTubeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +65,11 @@
 		3BDDE91D1B22E3A900E12766 = {
 			isa = PBXGroup;
 			children = (
+				3BDDE94B1B22E3F300E12766 /* Cartfile */,
 				3BDDE9281B22E3A900E12766 /* TestXCDYouTubeKit */,
 				3BDDE93E1B22E3A900E12766 /* TestXCDYouTubeKitTests */,
 				3BDDE9271B22E3A900E12766 /* Products */,
+				3BDDE9501B22E50000E12766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +85,7 @@
 		3BDDE9281B22E3A900E12766 /* TestXCDYouTubeKit */ = {
 			isa = PBXGroup;
 			children = (
+				3BDDE9541B22E75200E12766 /* TestXCDYouTubeKit-Bridging-Header.h */,
 				3BDDE92B1B22E3A900E12766 /* AppDelegate.swift */,
 				3BDDE92D1B22E3A900E12766 /* ViewController.swift */,
 				3BDDE92F1B22E3A900E12766 /* Main.storyboard */,
@@ -112,6 +121,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3BDDE9501B22E50000E12766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BDDE9511B22E52200E12766 /* XCDYouTubeKit.framework */,
+			);
+			name = Frameworks;
+			path = TestXCDYouTubeKit.xcodeproj;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +140,7 @@
 				3BDDE9221B22E3A900E12766 /* Sources */,
 				3BDDE9231B22E3A900E12766 /* Frameworks */,
 				3BDDE9241B22E3A900E12766 /* Resources */,
+				3BDDE9531B22E5F000E12766 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +213,7 @@
 			files = (
 				3BDDE9311B22E3A900E12766 /* Main.storyboard in Resources */,
 				3BDDE9361B22E3A900E12766 /* LaunchScreen.xib in Resources */,
+				3BDDE94C1B22E3F300E12766 /* Cartfile in Resources */,
 				3BDDE9331B22E3A900E12766 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +226,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BDDE9531B22E5F000E12766 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/XCDYouTubeKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BDDE9221B22E3A900E12766 /* Sources */ = {
@@ -340,9 +377,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestXCDYouTubeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestXCDYouTubeKit/TestXCDYouTubeKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +394,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestXCDYouTubeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestXCDYouTubeKit/TestXCDYouTubeKit-Bridging-Header.h";
 			};
 			name = Release;
 		};
